@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function cuba_ct_speaker_form_alter(&$form, &$form_state, $form_id) {
+
+  // If on the speaker form add description to title for full name.
+  if ($form_id == 'node_cuba_ct_speaker_form' || $form_id == 'node_cuba_ct_speaker_form') {
+
+    $form['title']['widget'][0]['value']['#description'] =  \Drupal\Core\Field\FieldFilteredMarkup::create('Enter the full name of the speaker.');
+  }
+}

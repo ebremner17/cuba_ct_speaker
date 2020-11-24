@@ -21,40 +21,11 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
   field_cuba_speaker_affiliation:
-    weight: 10
-    settings:
-      rows: 2
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_cuba_speaker_biography:
-    weight: 13
-    settings:
-      rows: 8
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_cuba_speaker_conference:
-    weight: 7
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_cuba_speaker_picture:
-    type: media_library_widget
-    weight: 12
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-    region: content
-  field_cuba_speaker_pos_title:
     weight: 9
     settings:
       rows: 2
@@ -62,15 +33,28 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_cuba_speaker_talk_title:
-    weight: 11
+  field_cuba_speaker_biography:
+    weight: 12
     settings:
-      rows: 2
+      rows: 8
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: text_textarea
     region: content
-  field_cuba_speaker_type:
+  field_cuba_speaker_conference:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_cuba_speaker_picture:
+    type: media_library_widget
+    weight: 11
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_cuba_speaker_pos_title:
     weight: 8
     settings:
       rows: 2
@@ -78,16 +62,25 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
-  langcode:
-    type: language_select
-    weight: 1
-    region: content
+  field_cuba_speaker_talk_title:
+    weight: 10
     settings:
-      include_locked: true
+      rows: 2
+      placeholder: ''
     third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_cuba_speaker_type:
+    weight: 7
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
   path:
     type: path
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -95,14 +88,14 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 5
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 3
     region: content
     third_party_settings: {  }
   title:
@@ -114,10 +107,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 3
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  langcode: true
   promote: true
   uid: true
