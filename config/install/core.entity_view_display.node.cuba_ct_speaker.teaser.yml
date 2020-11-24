@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_affiliation
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_biography
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_conference
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_picture
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_pos_title
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_talk_title
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_type
+    - node.type.cuba_ct_speaker
+  module:
+    - user
+id: node.cuba_ct_speaker.teaser
+targetEntityType: node
+bundle: cuba_ct_speaker
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cuba_speaker_affiliation: true
+  field_cuba_speaker_biography: true
+  field_cuba_speaker_conference: true
+  field_cuba_speaker_picture: true
+  field_cuba_speaker_pos_title: true
+  field_cuba_speaker_talk_title: true
+  field_cuba_speaker_type: true
+  langcode: true

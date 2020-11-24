@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuba_speaker_talk_title
+    - node.type.cuba_ct_speaker
+id: node.cuba_ct_speaker.field_cuba_speaker_talk_title
+field_name: field_cuba_speaker_talk_title
+entity_type: node
+bundle: cuba_ct_speaker
+label: 'Talk title'
+description: 'Enter the title for the talk that the speaker is giving (i.e. Leadership in Tough Times)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

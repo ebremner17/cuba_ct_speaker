@@ -1,0 +1,75 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_affiliation
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_biography
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_conference
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_picture
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_pos_title
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_talk_title
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_type
+    - node.type.cuba_ct_speaker
+  module:
+    - text
+    - user
+id: node.cuba_ct_speaker.default
+targetEntityType: node
+bundle: cuba_ct_speaker
+mode: default
+content:
+  field_cuba_speaker_affiliation:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_cuba_speaker_biography:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_cuba_speaker_conference:
+    weight: 6
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_cuba_speaker_picture:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_cuba_speaker_pos_title:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_cuba_speaker_talk_title:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_cuba_speaker_type:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  langcode: true
+  links: true

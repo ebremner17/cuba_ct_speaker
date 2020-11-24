@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuba_speaker_affiliation
+    - node.type.cuba_ct_speaker
+id: node.cuba_ct_speaker.field_cuba_speaker_affiliation
+field_name: field_cuba_speaker_affiliation
+entity_type: node
+bundle: cuba_ct_speaker
+label: Affiliation
+description: 'Enter the affiliation of the speaker (i.e. University of Waterloo, Department of National Defence, Government of Canada, etc ...)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

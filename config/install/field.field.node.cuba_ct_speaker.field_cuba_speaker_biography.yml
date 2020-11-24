@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuba_speaker_biography
+    - node.type.cuba_ct_speaker
+  module:
+    - text
+id: node.cuba_ct_speaker.field_cuba_speaker_biography
+field_name: field_cuba_speaker_biography
+entity_type: node
+bundle: cuba_ct_speaker
+label: Biography
+description: 'Enter the biography for the speaker.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

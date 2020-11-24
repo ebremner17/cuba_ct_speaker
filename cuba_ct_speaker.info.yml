@@ -1,0 +1,19 @@
+name: Speaker
+description: 'Provides Speaker content type and related configuration. Speaker for a CUBA conference'
+type: module
+core: 8.x
+dependencies:
+  - content_translation
+  - cuba_ct_conference_section
+  - cuba_media
+  - field
+  - language
+  - media
+  - media_library
+  - menu_force
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user

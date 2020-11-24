@@ -1,0 +1,123 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_affiliation
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_biography
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_conference
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_picture
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_pos_title
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_talk_title
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_type
+    - node.type.cuba_ct_speaker
+  module:
+    - media_library
+    - path
+    - text
+id: node.cuba_ct_speaker.default
+targetEntityType: node
+bundle: cuba_ct_speaker
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cuba_speaker_affiliation:
+    weight: 10
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_cuba_speaker_biography:
+    weight: 13
+    settings:
+      rows: 8
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_cuba_speaker_conference:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_cuba_speaker_picture:
+    type: media_library_widget
+    weight: 12
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+  field_cuba_speaker_pos_title:
+    weight: 9
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_cuba_speaker_talk_title:
+    weight: 11
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_cuba_speaker_type:
+    weight: 8
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  promote: true
+  uid: true

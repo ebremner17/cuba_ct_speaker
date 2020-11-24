@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuba_speaker_pos_title
+    - node.type.cuba_ct_speaker
+id: node.cuba_ct_speaker.field_cuba_speaker_pos_title
+field_name: field_cuba_speaker_pos_title
+entity_type: node
+bundle: cuba_ct_speaker
+label: Position/title
+description: 'Enter the position or title for the speaker (i.e. President, Vice-chair, Board of Governors, Former Chief of the Defense Staff (ret''d), etc ...)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
