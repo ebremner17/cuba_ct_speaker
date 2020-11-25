@@ -19,7 +19,7 @@ function cuba_ct_speaker_preprocess_paragraph(&$variables) {
     $current_path = \Drupal::service('path.current')->getPath();
     $current_path_exploded = explode ('/', $current_path);
 
-    if (end($current_path_exploded) == 'add' || end($current_path_exploded) == 'edit') {
+    if (in_array('add', $current_path_exploded) || in_array('edit', $current_path_exploded)) {
 
       $tid = $variables['paragraph']->get('field_cuba_para_sp_conference')->getValue()[0]['target_id'];
 
