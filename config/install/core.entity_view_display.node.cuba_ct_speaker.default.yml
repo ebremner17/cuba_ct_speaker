@@ -5,12 +5,14 @@ dependencies:
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_affiliation
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_biography
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_conference
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_file
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_picture
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_pos_title
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_talk_title
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_type
     - node.type.cuba_ct_speaker
   module:
+    - file
     - text
     - user
 id: node.cuba_ct_speaker.default
@@ -33,12 +35,20 @@ content:
     type: text_default
     region: content
   field_cuba_speaker_conference:
-    weight: 6
+    weight: 7
     label: hidden
     settings:
       link: false
+      view_mode: default
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
+    region: content
+  field_cuba_speaker_file:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
     region: content
   field_cuba_speaker_picture:
     type: entity_reference_entity_view

@@ -8,6 +8,7 @@ dependencies:
   - cuba_media
   - draggableviews
   - field
+  - file
   - language
   - media
   - media_library
@@ -15,6 +16,7 @@ dependencies:
   - menu_ui
   - node
   - path
+  - pathauto
   - taxonomy
   - text
   - user

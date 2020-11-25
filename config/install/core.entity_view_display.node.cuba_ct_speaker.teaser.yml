@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_affiliation
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_biography
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_conference
+    - field.field.node.cuba_ct_speaker.field_cuba_speaker_file
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_picture
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_pos_title
     - field.field.node.cuba_ct_speaker.field_cuba_speaker_talk_title
@@ -27,6 +28,7 @@ hidden:
   field_cuba_speaker_affiliation: true
   field_cuba_speaker_biography: true
   field_cuba_speaker_conference: true
+  field_cuba_speaker_file: true
   field_cuba_speaker_picture: true
   field_cuba_speaker_pos_title: true
   field_cuba_speaker_talk_title: true
