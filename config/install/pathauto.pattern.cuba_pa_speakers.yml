@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: cuba_pa_speakers
+label: 'CUBA speakers'
+type: 'canonical_entities:node'
+pattern: '/speakers/[node:field_cuba_speaker_conference:entity:name]/[node:title]'
+selection_criteria:
+  e146cf2e-5778-4ee9-9eb3-8cd176ac4cd2:
+    id: node_type
+    bundles:
+      cuba_ct_speaker: cuba_ct_speaker
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e146cf2e-5778-4ee9-9eb3-8cd176ac4cd2
+  d66c175c-ee9f-4e2a-82a7-77f7054bf321:
+    id: language
+    langcodes:
+      en: en
+      fr: fr
+    negate: false
+    context_mapping:
+      language: 'node:langcode:language'
+    uuid: d66c175c-ee9f-4e2a-82a7-77f7054bf321
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Language
